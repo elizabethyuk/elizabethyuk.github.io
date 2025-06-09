@@ -1,0 +1,13 @@
+.hj-margin-top {
+    margin-top: 60px;
+}
+
+p.hj-milestone {
+    font-size: 20px;
+    background-color: mediumpurple;
+    color: white;
+}
+
+p.hj-default {
+    color: white;
+}
