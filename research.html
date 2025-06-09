@@ -12,20 +12,30 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-center"">
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-round w3-hide-small w3-top nav custom-navbar" id="navbar">
+    <ul>
+      <li>
+        <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+      </li>
+      <li>
+        <a href="./research.html" class="w3-bar-item w3-button">Research Questions</a>
+      </li>
+      <li>
+        <a href="./domain.html" class="w3-bar-item w3-button">Domain Projects</a>
+      </li>
+      <li>
+        <a href="./milestones.html" class="w3-bar-item w3-button">Milestones</a>
+      </li>
+    </ul>
+  </div>
+
   <img class="w3-image" style="opacity: 0.8;" src="./background.jpg" alt="Me">
   <div class="w3-display-middle w3-padding-large w3-wide w3-text-light-grey w3-center">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">ELIZABETH YUK</h1>
     <h1 class="w3-hide-medium w3-hide-small w3-large">Music Education Master's Candidate, Northwestern University</h1>
     <h3 class="w3-hide-large w3-display-top" style="white-space:nowrap">ELIZABETH YUK</h3>
     <h5 class="w3-hide-large w3-display-top" style="white-space:nowrap">Music Education Master's Candidate, Northwestern University</h5>
-  </div>
-
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-light-grey w3-round w3-hide-small w3-center">
-    <a href="./index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="./research.html" class="w3-bar-item w3-button">Research Questions</a>
-    <a href="./domain.html" class="w3-bar-item w3-button">Domain Projects</a>
-    <a href="./milestones.html" class="w3-bar-item w3-button">Milestones</a>
   </div>
 
   <!-- Navbar (placed at the bottom of the header image) -->
@@ -88,4 +98,19 @@
   <br/>
 </footer>
 </body>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    const navbarMobile = document.getElementById('navbar-mobile');
+    const scrolled = window.scrollY > 50;
+
+    if (scrolled) {
+      navbar?.classList.add('scrolled');
+      navbarMobile?.classList.add('scrolled');
+    } else {
+      navbar?.classList.remove('scrolled');
+      navbarMobile?.classList.remove('scrolled');
+    }
+  });
+</script>
 </html>

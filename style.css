@@ -2,12 +2,48 @@
     margin-top: 60px;
 }
 
-p.hj-milestone {
+.hj-milestone{
     font-size: 20px;
     background-color: mediumpurple;
     color: white;
 }
 
-p.hj-default {
+.hj-domain {
     color: white;
 }
+
+.nav ul {
+    float: right;
+    max-width: calc(100vw - 300px);
+    overflow: hidden;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    position: relative;
+}
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 999;
+    background-color: transparent;
+    color: white;
+  }
+
+  .custom-navbar a {
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+
+  .custom-navbar.scrolled {
+    background-color: rgba(211, 211, 211, 0.9); /* lightgrey with opacity */
+    color: black;
+  }
+
+  .custom-navbar.scrolled a {
+    color: black !important;
+  }
